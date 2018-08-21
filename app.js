@@ -1,10 +1,23 @@
 //Const = cria variavel
 const EventEmitter = require('events');
 
+class MinhaClasse extends EventEmitter
+{
+	constructor()
+	{
+		super();
+
+	}
+}
+
+const meuObjeto = new MinhaClasse();
+
 const emissor = new EventEmitter();
 
-emissor.on('click', function() {
+//cria o evento
+meuObjeto.on('click', function() {
 	console.log('Olá mundo!');
 });
 
-emissor.emit('click');
+//chama o evento
+meuObjeto.emit('click');
