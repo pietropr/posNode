@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Tests com o Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietropr/posNode.git"
+  },
+  "author": "Pietro Pinton Rosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pietropr/posNode/issues"
+  },
+  "homepage": "https://github.com/pietropr/posNode#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
+}
