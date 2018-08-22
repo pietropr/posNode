@@ -1,23 +1,9 @@
-//Const = cria variavel
-const EventEmitter = require('events');
+var express = require('express');
+var app = express();
+var rotaUsuario = require('./usuarios.js');
 
-class MinhaClasse extends EventEmitter
-{
-	constructor()
-	{
-		super();
+// Rota para usuários
+app.use('/usuarios', rotaUsuario);
 
-	}
-}
-
-const meuObjeto = new MinhaClasse();
-
-const emissor = new EventEmitter();
-
-//cria o evento
-meuObjeto.on('click', function() {
-	console.log('Olá mundo!');
-});
-
-//chama o evento
-meuObjeto.emit('click');
+app.listen(3000);
+console.log('Servidor iniciado na porta 3000');
