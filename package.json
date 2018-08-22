@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pietropr/posNode#readme",
   "dependencies": {
-    "body-parser": "^1.18.3"
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1"
   }
 }
